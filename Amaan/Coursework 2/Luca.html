@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Luca Amaan</title>
+  </head>
+
+  <body>
+    <nav class="nav_bar" style="positon: absolute; font-size: 20px ">
+      <a href="#reservations" class="btn1">Reservations</a>
+        <a href="#menus">Menus|</a>
+        <a href="#privatedining">Private Dining|</a>
+        <a href="#christmas">Christmas|</a>
+    </nav>
+
+
+<div class="container">
+<img src="images/luca.svg" alt="Luca" class="luca">
+</div>
+
+<!-- slideshow was adapted from ws3 to fit my needs by removing added detail such as text -->
+<div class="slideshow-container" style="positon: relative; left:0; top:0;">
+
+<div class="container">
+  <div class="bottomright">
+<a href="020 3859 3000">020 3859 3000 |</a> <a href="https://www.google.co.uk/maps/place/Luca/@51.5221936,-0.103368,17z/data=!4m13!1m7!3m6!1s0x48761b511729cc2b:0x2c2da3589331eaf9!2s88+St+John+St,+London+EC1M+4EL!3b1!8m2!3d51.5221836!4d-0.1020119!3m4!1s0x48761b51100724a7:0xc779912dc42da7d4!8m2!3d51.5220361!4d-0.1016722">88 St John St, Clerkenwell, London EC1M 4EH</a>
+  </div>
+  <div class="bottomleft">
+<a href="https://www.instagram.com/luca.restaurant/">Instagram</a>
+  </div>
+<div class="mySlides fade">
+  <img src="images/lucabg.png" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+<div class="mySlides fade">
+  <img src="images/lucagreen.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+<div class="mySlides fade">
+  <img src="images/lucabar.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+<div class="mySlides fade">
+  <img src="images/lucadining.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+<div class="mySlides fade">
+  <img src="images/lucarestaurant1.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+  <div class="bottomleft"></div>
+  </div>
+<div class="mySlides fade">
+  <img src="images/lucarestaurant2.jpg" style="width:100%">
+</div>
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script> /* script from ws3*/
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<div id="britishcontainer">
+<h2 style="padding-top: 40px;">British seasonal ingredients through an Italian lens</h2>
+</div>
+
+<div class="containerblock">
+<div id="restaurant">
+  <img src="images/restrauntlogo.svg">
+<p style="padding-top: 80px;">The restaurant serves high-quality ingredients from around the British Isles and Italy.
+  Seasonal produce such as scallops form Orkney,
+  Hebridean lamb and turbot from Cornwall. It is food that observes the established traditions of Italian cooking,
+  but breaks the rules a little.</p>
+  <a href="#" class="btn">BOOK A TABLE</a>
+</div>
+<div id="restaurantimg">
+  <img src="images/lucarestaurant2.jpg">
+</div>
+</div>
+
+<div class="containerblock">
+  <div id="christmas">
+    <img src="images/christmas.svg">
+  <p style="padding-top: 80px;">There’s something special about Christmas at Luca.
+    Our restaurant and private dining rooms will be given a magical make over from 22nd November.
+    We are now taking reservations for the Garden Room, Pasta Room, Terrace and main restaurant,
+    accommodating groups of all sizes.</p>
+      <a href="#" class="btn">EVENTS</a>  <a href="#" class="btn">EVENTS BROCHURE</a>
+  </div>
+  <div id="cocktailimg">
+    <img src="images/cocktail.jpg">
+</div>
+</div>
+
+<div class="containerblock">
+  <div id="lucabar">
+    <img src="images/lucabarlogo.svg">
+  <p style="padding-top: 80px;">Franciacorta, Negronis, Grappa & freshly shaken cocktails.
+     Things to share – Parmesan fries, salumi, pasta. Take a seat in one of our iconic
+      booths or at our marble bar for a drink, light bite or to settle in for the night.</p>
+      <a href="#" class="btn">BOOK A TABLE</a>
+  </div>
+  <div id="lucabar2">
+    <img src="images/lucabar2.jpg">
+</div>
+</div>
+
+<img style="width:100%" src="images/slideshow1.jpg">
+
+<div class="containerblocksmall">
+  <div id="privatedining">
+    <img src="images/privatedininglogo.svg">
+    <p style="padding-top: 80px;">We have three private dining spaces;
+     The Terrace for up to twenty guests,
+    The Pasta Room for up to ten, and The Garden Room for up to eight guests.
+    We can also accommodate parties for up to 14 guests on large tables
+    in our main dining room or up to 100 guests for private hire.</p>
+      <a href="#" class="btn" style="top: 50px;">ENQUIRE</a>
+  </div>
+  <div id="privatediningimg">
+    <img src="images/privatediningimg.jpeg">
+</div>
+</div>
+
+<div class="containerblocksmall">
+  <div id="gifts">
+    <img src="images/giftslogo.svg">
+    <p style="padding-top: 80px;">We have a selection of gift vouchers and experiences available.</p>
+      <a href="#" class="btn">MORE INFO</a>
+  </div>
+  <div id="giftsimg">
+    <img src="images/giftsimg.jpg">
+</div>
+</div>
+
+<div class="containerblock">
+    <div id="reservations">
+      <img src="images/reservationslogo.svg">
+    <p style="padding-top: 80px; color:white;">To make a booking please click below.</p>
+<p style="padding-top: 80px; color:white;">
+For any other enquiries you can email us at reservations@luca.restaurant.
+Our reservations lines are open Monday – Friday from 10 am to 5 pm.</p>
+<a href="#" class="btn3">BOOK A TABLE</a>
+    </div>
+  </div>
+
+    <div class="containerblock">
+        <div id="menus">
+          <img src="images/menuslogo.svg">
+        <p style="padding-top: 80px; color:white;">Our menus reflect the seasons,
+          serving the finest traditional Italian pasta dishes
+          alongside a variety of meat and seasonal seafood.</p>
+    <p style="padding-top: 80px; color:white;">We operate a corkage policy of £35 per bottle and
+      allow a maximum of 1 bottle for up to two people and 2 bottle for up to six guests.</p>
+    <a href="#" class="btn3" style="top: 70px;">DINING ROOM</a>
+    <a href="#" class="btn3" style="top: 70px;">BAR DINING</a>
+      <br>
+        <br>
+          <br>
+          <a href="#" class="btn3" style="top: 70px;">WINE LIST</a>
+          <a href="#" class="btn3" style="top: 70px;">PRIVATE DINING</a>>
+    <br>
+      <br>
+        <br>
+        <a href="#" class="btn3" style="top: 70px;">DESERTS</a>
+        <a href="#" class="btn3"style="top: 70px;">DRINKS</a>
+        </div>
+      </div>
+
+    <div class="containerblock">
+    <div id="press">
+      <img src="images/presslogo.svg">
+        <p style="padding-top: 80px; color:black;">“Negroni, please – God that’s good, best in London probably,
+          give us another – and a plate of those parmesan fries …”</p>
+          <img src="images/newtimeslogo.png">
+            </div>
+          </div>
+
+        <div class="containerblock">
+          <div id="hours">
+            <img src="images/hourslogo.svg">
+            <br>
+            <br>
+            <h1>Restaurant</h1>
+              <p style="padding-top: 40px; color:white;">We are open for dinner Tuesday to Saturday from 6 pm and for lunch Wednesday to Saturday from 12 pm to 2 pm</p>
+              <h1>Location</h1>
+              <p style="padding-top: 40px;  color:white;">We can be found at 88 St. John Street in the heart of Clerkenwell. We are five minutes from Farringdon station.</p>
+              <a style="color:white;" href="#" class="btnwhite">BOOK A TABLE</a>
+            </div>
+                <div id="map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.5106247189606!2d-0.103368!3d51.5221936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b51100724a7%3A0xc779912dc42da7d4!2sLuca!5e0!3m2!1sen!2suk!4v1669416963475!5m2!1sen!2suk" width="759" height="685" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              </div>
+
+              <div class="containerblock">
+              <div id="signup">
+                <img src="images/signuplogo.svg">
+                  <p style="padding-top: 50px; color:black;">The Clove Club Group is a London-based restaurant group which includes The Clove Club and Luca.</p>
+              <p style="padding-top: 50px; color:black;">
+              The group was founded in 2012 by owners Isaac McHale, Daniel Willis & Johnny Smith.</p>
+              <p style="padding-top: 50px; color:black;">Sign up to the newsletter to stay in touch.</p>
+
+              <div class="signupbox">
+              <input type="text" id="fn" name="firstname" placeholder="FIRST NAME">
+              </div>
+
+              <div class="signupbox">
+              <input type="text" id="ln" name="lastname" placeholder="LAST NAME">
+              </div>
+
+              <div class="signupbox">
+              <input type="text" id="email" name="lastname" placeholder="EMAIL ADRESS">
+              </div>
+
+              <div class="signupbox">
+              <button class="subbtn">SUBSCRIBE</button>
+              </div>
+              <br>
+              <br>
+              <a style="font-size: 30px;" href="https://www.thecloveclub.com/">THE COVE CLUB</a>
+
+              <div class="sigcontainer">
+              <img src="images/signature.png">
+              <br>
+              <br>
+              <a style="font-size: 30px; background-color: black;" href="https://github.com/4maan7/Coursework2">GIT HUB LINK</a>
+              </div>
+              </form>
+          </div>
+        </div>
+  </body>
+</html>

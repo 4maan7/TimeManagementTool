@@ -1,0 +1,41 @@
+@media screen and (orientation: landscape)
+{ body
+  {
+    background: ivory;
+  }
+}
+@media screen and (orientation: portrait)
+{ body
+  {
+    background: lightcoral;
+  }
+}
+table, th, td{
+  border-collapse: collapse;
+}
+th, td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+h1 {
+  font-size: 8ex;
+}
+img {
+  width: 300px;
+}
+img.hobbies {
+  width: 500px;
+  padding-left: 430px;
+}
+header {
+  margin: 25px;
+}
+col {
+  border-right: 3px double black;
+  border-left: 3px double black;
+}
+col.Sidepanel {
+  background-color: beige;
+}

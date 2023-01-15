@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amaan's Dashboard</title>
+    <link rel="stylesheet" href="./CSS/Dashboard Stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <header>
+    <img src="Image/f0cus logo.png" alt="f0cus logo" class="headerlogo">
+  </header>
+  <body>
+    <table>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <tr>
+        <td rowspan="4">
+        </td>
+        <td rowspan="2" colspan="2" class="BarChartData">
+          <div class="sidenav"> <!--sidebar code and script (line 47 - 63) from w3 https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown-->
+            <a href="../IndexPage.html">Home</a>
+            <a href="../TimeManagementPage.html">Calendar</a>
+            <a href="">Timer</a>
+            <a href="Dashboard.html">Team Dashboard</a>
+            <button class="dropdown-btn">Individual Dashboards
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="Amaan Dashboard.html" class="ActiveTab">Amaan</a>
+              <a href="Tolu Dashboard.html">Tolu</a>
+              <a href="Guy Dashboard.html">Guy</a>
+              <a href="Bilal Dashboard.html">Bilal</a>
+              <a href="Jadey Dashboard.html">Jadey</a>
+              <a href="Samiul Dashboard.html">Samiul</a>
+            </div>
+          </div>
+
+          <div class="main">
+            <img src="Image/Amaan Bar Chart.png" alt="Bar Chart" class="TeamBarChart">
+          </div>
+
+          <script>
+          /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+        </script>
+        </td>
+        <td rowspan="2" colspan="2" class="DoughnutData">
+          <div class="DoughnutGraph"> <!--Doughnut Chart from 3 (Lines 66 - 98) https://www.w3schools.com/js/js_graphics_chartjs.asp-->
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <script>
+              var xValues = ["Studying", "Work", "Social", "Procrastination", "Sport", "Hobbies", "Sleep"];
+              var yValues = [27, 17, 33, 24, 6, 16, 45];
+              var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145",
+                "#E1D62B",
+                "#A22DE4"
+              ];
+
+              new Chart("myChart", {
+                type: "doughnut",
+                data: {
+                  labels: xValues,
+                  datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                  }]
+                },
+                options: {
+                  title: {
+                    display: true,
+                    text: "Time Spent"
+                  }
+                }
+              });
+            </script>
+          </div>
+        </td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <div class="DataStats">
+          <table class="DataStatsTable">
+            <tr>
+              <td>
+                <div class="data1">
+                  <h1>16.07%</h1>
+                  <p>studying for 27 hoursx</p>
+                </div>
+              </td>
+              <td>
+                <div class="data2">
+                  <h1>10.12%</h1>
+                  <p>work for 17 hours</p>
+                </div>
+              </td>
+              <td>
+                <div class="data3">
+                  <h1>19.64%</h1>
+                  <p>social for 33 hours</p>
+                </div>
+              </td>
+              <td>
+                <div class="data4">
+                  <h1>14.29%</h1>
+                  <p>procrastination for 24 hours</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="data5">
+                  <h1>3.57%</h1>
+                  <p>sport for 6 hours</p>
+                </div>
+              </td>
+              <td>
+                <div class="data6">
+                  <h1>9.52%</h1>
+                  <p>hobbies for 16 hours</p>
+                </div>
+              </td>
+              <td>
+                <div class="data7">
+                  <h1>26.79%</h1>
+                  <p>sleep for 45 hours</p>
+                </div>
+              </td>
+              <td>
+                <div class="data8">
+                  <p>Time spent over 168 hours of a week</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </tr>
+    </table>
+
+  </body>
+</html>

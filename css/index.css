@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+  background-image:url(../images/wallpaper.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.containerblock{
+  width: 100%;
+  margin: 0;
+}
+
+#leftblue{
+  float: left;
+  width: 60%;
+  height: 200em;
+  background-color: #274269;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#rightwhite{
+  float: right;
+  width: 40%;
+  height: 200em;
+  background-color: white;
+  opacity: 0.9;
+  text-align: center;
+}
+
+h1{
+  font-family: calibri;
+  font-size: 80px;
+  color: #274269;
+}
+
+.dropbtn {
+  background-color: #274269;
+  color: white;
+  padding: 16px;
+  font-size: 50px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+
+.dropdown-content {
+  margin-left: 150px;
+  display: none;
+  position: absolute;
+  background-color: #274269 ;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px #274269;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+.dropdown-content a:hover {background-color: #274269;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #274269;}
+
+iframe{
+  width: 800px;
+  padding: 10px;
+  height:400px;
+  border-radius: 10px;
+  border-width: thick;
+  margin-bottom: 50px;
+}
+
+.team{
+  height: 200px;
+  width:200px;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 50px;
+  background: #274369;
+  border: solid #ffffff 5px;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #002d75;
+  text-decoration: none;
+}
+
+.buttonbox{
+  margin-left: 200px;
+  width:700px;
+  height: 100PX;
+}
