@@ -1,0 +1,84 @@
+<style>
+
+.table {
+  border: 2px ridge black;
+  float: center;
+}
+.block0{
+  text-align: center;
+  font-family: courier;
+  font-size:15px;
+  border:5px solid black;
+  background-color:#97B4C6;
+
+
+}
+h1{
+font-size:45px;}
+.table {
+  text-align:center;
+  margin:auto;
+  float: center;
+  width:90%;
+  font-size: 5px;
+  margin-bottom:15px;
+
+}
+
+.block1 {
+border:5px ridge black;
+background-color:#807DB6;
+text-align:center;
+margin:auto;
+margin-top:40px;
+margin-left:75px;
+margin-right:200px;
+width:90%;
+float:center;
+position:absolute;
+
+}
+img {
+  border:3px solid black
+}
+.block2 {
+  font-size: 15px;
+  border:5px ridge black;
+  background-color:#669EEE;
+  text-align:center;
+  margin:auto;
+  float:center;
+  margin-top:150px;
+  overflow:hidden;
+  margin-right:10px;
+  margin-left:30px;
+}
+
+.block3 {
+  font-size: 15px;
+  border:5px ridge black;
+  background-color:#807DB6;
+  font-family:courier;
+  font-size:15px;
+  text-align:center;
+  margin:auto;
+  float:center;
+  margin-top:10px;
+  overflow:hidden;
+  margin-left:80px;
+  margin-right:45px;
+}
+.block4 {
+  font-size: 15px;
+  border:5px ridge black;
+  background-color:#669EEE;
+  font-family:courier;
+  font-size:15px;
+  text-align:center;
+  margin:auto;
+  float:center;
+  margin-top:10px;
+  overflow:hidden;
+  margin-left:80px;
+  margin-right:45px;
+}

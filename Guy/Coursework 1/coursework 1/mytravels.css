@@ -1,0 +1,81 @@
+
+
+<style>
+
+ .Header{
+  font-family:Courier,monospace;
+  border: 4px dashed #2B262D;
+  text-align:center;
+  margin:auto;
+  background-color: #647295;
+  font-size: 70px;
+  color:#2B262D;
+  width: 80%;
+}
+
+.Header1{
+ font-family:Courier,monospace;
+ border: 4px dashed #2B262D;
+ text-align:center;
+ margin:auto;
+ background-color: #647295;
+ font-size: 30px;
+ color:#2B262D;
+ width: 80%;
+}
+
+  .LocationHs{
+    font-family:Courier;
+    border: 2px outset #2B262D;
+    background-color:#F2EBE5;
+    width: 80%;
+    float:left;
+    color:#2B262D;
+    font-size: 40px;
+    margin-left: 73px;
+    padding:5%;
+    height:10%;
+
+  }
+  .LocationDes{
+    font-family:Courier,cursive;
+    border: 2px outset black;
+    box-sizing: border-box;
+    display:inline-block;
+    background-color:#647295;
+    width:34.5%
+
+  }
+  .gmap1{
+    font-family:Courier;
+    border: 2px outset #2B262D;
+    background-color: #9F496E;
+    width: 25%;
+    box-sizing: border-box;
+    display:inline-block;
+    float:left;
+    margin-left: 73px;
+    }
+
+    .imgs{
+      border:2px outset #2B262D;
+      background-color:#9F496E;
+      width:30%;
+      text-align:center;
+      margin-right:73px;
+      float:right;
+      font-family:Courier;
+    }
+
+    .space {
+      font-family:Courier,cursive;
+      border: 2px #F2EBE5;
+      box-sizing: border-box;
+      display:inline-block;
+      background-color:#F2EBE5;
+      height:34.5%;
+      width:34.5%;
+
+    }
+
+    </style>

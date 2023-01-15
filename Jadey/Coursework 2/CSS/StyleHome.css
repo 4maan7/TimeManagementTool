@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;600;700&display=swap");
+
+body{
+  font: 100%/1 Filosofia,Georgia,serif;
+  place-items: centre;
+  background-color: grey;
+  align-items: center;
+}
+.global_background{
+  background-image: url(../Images/global-bg.jpg);/*https://www.w3schools.com/cssref/pr_background-image.php*/
+
+}
+.home_page{
+  background-image: url(../Images/main_bg.jpg);/*https://www.w3schools.com/cssref/pr_background-image.php*/
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: -webkit-sticky;  /*https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+  top: 0;
+}
+footer{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+nav{  /*all nav hovers from w3 https://www.w3schools.com/css/css_link.asp*/
+  color: white;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: oldstyle-nums;
+  font-weight: 400;
+}
+.nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+.nav-item-right:hover {
+  color: white;
+  text-decoration: underline;
+}
+.nav-item:active {
+  color: white;
+}
+.nav-item-right:active {
+  color: white;
+}
+.nav-item-right{
+  float:right;
+  color: white;
+  text-decoration: none;
+}
+.nav-item{
+  color: white;
+  text-decoration: none;
+}
+.menu_navigation{
+  height: 50px;
+
+}
+.logo{
+  margin: auto;
+  padding: 1.5em;
+  width: 80%;
+  max-width: 500px;
+  height: 85%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.logo_img{
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-position: 50%, 50%;
+}
+
+
+.restaurant_page{
+  background-image: url(../Images/Luca-rest16299.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+.restaurant_page_background{
+  background-color: #efa495;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 50%;
+  align-items: center;
+}
+.restaurant_text{
+  text-align: center;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 250px;
+}
+button{
+  border: 2px solid black;
+  color: black;
+  background-color: #efa495;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.SUBSCRIBE{
+  border: 2px solid black;
+  color: black;
+  background-color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.contact_page{
+  padding-top: 80px;
+  background-color: orange;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  text-align: center;
+}
